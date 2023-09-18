@@ -100,7 +100,7 @@ echo -e "\e[1;41m==========================================================\e[0m
 sleep 3
 clear 
 cd
-GitUser="EAS22"
+GitUser="IlhamStore23"
 wget https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn.sh ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
 wget https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/install/sstp.sh && chmod +x sstp.sh && screen -S sstp.sh ./sstp.sh
