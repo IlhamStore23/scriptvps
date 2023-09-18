@@ -23,7 +23,7 @@ commonname=server
 email=admin@gilerspeednet.tk
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/${GitUser}/aws/main/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
