@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mod By syapik96
+# Mod By IlhamStore
 # 
 # ==================================================
 
@@ -24,7 +24,7 @@ commonname=ssh.gilergames.tk
 email=admin@gilergames.tk
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/password"
 chmod +x /etc/pam.d/common-password
 
 # install
@@ -113,7 +113,7 @@ Index_port='81'
 IPADDR=$(wget -qO- icanhazip.com);
 # creating page download Openvpn config file
 mkdir -p /home/vps/public_html
-wget -O /home/vps/public_html/index.html "https://raw.githubusercontent.com/syapik96/aws/main/lain2/index.html"
+wget -O /home/vps/public_html/index.html "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/lain2/index.html"
 
 # Setting template's correct name,IP address and nginx Port Page Openvpn
 sed -i "s|NGINXPORT|$Index_port|g" /home/vps/public_html/index.html
@@ -141,7 +141,7 @@ service dropbear restart
 
 # install squid
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 #​ Install SSLH 
@@ -319,13 +319,13 @@ cd
 apt install -y libxml-parser-perl
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/bannerssh.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 #install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/syapik96/aws/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
-wget https://raw.githubusercontent.com/syapik96/aws/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
