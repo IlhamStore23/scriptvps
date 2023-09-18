@@ -95,11 +95,11 @@ ip6tables-save > /etc/ip6tables.up.rules
 
 GitUser="syapik96"
 cd /usr/bin
-wget -O addss "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/tambah/addss.sh"
-wget -O delss "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/hapus/delss.sh"
-wget -O cekss "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/cekss.sh"
-wget -O xp-ss "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/xp-ss.sh"
-wget -O renewss "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/renewss.sh"
+wget -O addss "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/tambah/addss.sh"
+wget -O delss "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/hapus/delss.sh"
+wget -O cekss "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/cekss.sh"
+wget -O xp-ss "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/xp-ss.sh"
+wget -O renewss "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/renewss.sh"
 chmod +x addss
 chmod +x delss
 chmod +x cekss
