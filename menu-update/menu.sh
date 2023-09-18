@@ -34,7 +34,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
 	
 echo -e  "  ╔════════════════════════════════════════════════════════════╗" | lolcat
-echo -e  "  ║                    ♠  AutoScriptVPN  ♠                     ║" | lolcat
+echo -e  "  ║                    ♠  ILHAM GANTENG  ♠                     ║" | lolcat
 echo -e  "  ╠════════════════════════════════════════════════════════════╝" | lolcat
 echo -e  "  ║                      VPS PANEL INFO" | lolcat
 echo -e  "  ║ " | lolcat
