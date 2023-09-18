@@ -84,7 +84,7 @@ echo -e "\e[1;33m"
 read -rp "    Domain/Host: " -e host
 echo -e "\e[0m"
 domain="$host"
-echo "IP=$domain" >> /var/lib/premium-script/ipvps.conf
+echo "IP=$domain" >> /var/lib/scriptvps/ipvps.conf
 echo "$domain" >> /etc/v2ray/domain
 echo "$domain" >> /root/domain
 sleep 2
