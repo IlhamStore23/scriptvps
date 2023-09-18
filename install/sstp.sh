@@ -68,12 +68,12 @@ netfilter-persistent save
 netfilter-persistent reload
 
 #input perintah sstp
-GitUser="syapik96"
+GitUser="IlhamStore23"
 #wget https://github.com/${GitUser}/
-wget -O /usr/bin/addsstp https://raw.githubusercontent.com/${GitUser}/scriptvps/main/tambah/addsstp.sh && chmod +x /usr/bin/addsstp
-wget -O /usr/bin/delsstp https://raw.githubusercontent.com/${GitUser}/scriptvps/main/hapus/delsstp.sh && chmod +x /usr/bin/delsstp
-wget -O /usr/bin/ceksstp https://raw.githubusercontent.com/${GitUser}/scriptvps/main/ceksstp.sh && chmod +x /usr/bin/ceksstp
-wget -O /usr/bin/xp-sstp https://raw.githubusercontent.com/${GitUser}/scriptvps/main/xp-sstp.sh && chmod +x /usr/bin/xp-sstp
-wget -O /usr/bin/renewsstp https://raw.githubusercontent.com/${GitUser}/scriptvps/main/renewsstp.sh && chmod +x /usr/bin/renewsstp
+wget -O /usr/bin/addsstp https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/tambah/addsstp.sh && chmod +x /usr/bin/addsstp
+wget -O /usr/bin/delsstp https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/hapus/delsstp.sh && chmod +x /usr/bin/delsstp
+wget -O /usr/bin/ceksstp https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/ceksstp.sh && chmod +x /usr/bin/ceksstp
+wget -O /usr/bin/xp-sstp https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/xp-sstp.sh && chmod +x /usr/bin/xp-sstp
+wget -O /usr/bin/renewsstp https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/renewsstp.sh && chmod +x /usr/bin/renewsstp
 rm -f /root/sstp.sh
 echo "0 0 * * * root xp-sstp" >> /etc/crontab
