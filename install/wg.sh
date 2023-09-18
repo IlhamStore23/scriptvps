@@ -4,7 +4,7 @@
 # Centos 7 & 8 64bit 
 # Mod by SL
 # ==================================================
-GitUser="syapik96"
+GitUser="IlhamStore23"
 #wget https://github.com/${GitUser}/
 
 # Check OS version
@@ -92,11 +92,11 @@ WG_RUNNING=$?
 GitUser="syapik96"
 #wget https://github.com/${GitUser}/
 cd /usr/bin
-wget -O addwg "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/tambah/addwg.sh"
-wget -O delwg "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/hapus/delwg.sh"
-wget -O cekwg "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/cekwg.sh"
-wget -O xp-wg "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/xp-wg.sh"
-wget -O renewwg "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/renewwg.sh"
+wget -O addwg "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/tambah/addwg.sh"
+wget -O delwg "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/hapus/delwg.sh"
+wget -O cekwg "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/cekwg.sh"
+wget -O xp-wg "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/xp-wg.sh"
+wget -O renewwg "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/renewwg.sh"
 chmod +x addwg
 chmod +x delwg
 chmod +x cekwg
