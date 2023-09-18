@@ -55,12 +55,12 @@ else
     echo -e "  Auto-Script will remove your current configuration folder"
     echo -e "to avoid problem while auto-script running configuration setup${NC}"
     sleep 3
-    rm -rf /var/lib/premium-script
+    rm -rf /var/lib/scriptvps
     echo " system has deleted current /var/lib/premium-script "
     sleep 1
     echo " system create new directory for new auto-script installation"
     sleep 1
-    mkdir /var/lib/premium-script
+    mkdir /var/lib/scriptvps
 fi
 clear
 echo -e ""
