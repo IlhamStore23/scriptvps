@@ -347,28 +347,28 @@ netfilter-persistent reload
 GitUser="syapik96"
 # download script
 cd /usr/local/sbin
-wget -O add-host "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/add-host.sh" && chmod +x add-host
-wget -O about "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/about.sh" && chmod +x about
-wget -O prince "https://raw.githubusercontent.com/syapik96/scriptvps/main/prince" && chmod +x prince
-wget -O menu "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/menu-update/menu.sh" && chmod +x menu
-wget -O sssh "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/menu-update/ssh.sh" && chmod +x sssh
-wget -O system "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/menu-update/system.sh" && chmod +x system
-wget -O usernew "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/usernew.sh" && chmod +x usernew
-wget -O trial "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/trial.sh" && chmod +x trial
-wget -O hapus "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/hapus/hapus.sh" && chmod +x hapus
-wget -O member "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/member.sh" && chmod +x member
-wget -o webmin "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/webmin.sh" && chmod +x webmin
-wget -O delete "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/hapus/delete.sh" && chmod +x delete
-wget -O cek "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/cek.sh" && chmod +x cek
-wget -O restart "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/restart1.sh" && chmod +x restart
-wget -O speedtest "https://github.com/${GitUser}/scriptvps/raw/main/speedtest_cli.py" && chmod +x speedtest
-wget -O info "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/info.sh" && chmod +x info
-wget -O ram "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/ram.sh" && chmod +x ram
-wget -O renew "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/renew.sh" && chmod +x renew
-wget -O autokick "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/autokick.sh" && chmod +x autokick
-wget -O ceklim "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/ceklim.sh" && chmod +x ceklim
-wget -O tendang "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/tendang.sh" && chmod +x tendang
-wget -O clear-log "https://raw.githubusercontent.com/${GitUser}/scriptvps/main/clear-log.sh" && chmod +x clear-log
+wget -O add-host "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/add-host.sh" && chmod +x add-host
+wget -O about "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/about.sh" && chmod +x about
+wget -O prince "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/prince" && chmod +x prince
+wget -O menu "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/menu-update/menu.sh" && chmod +x menu
+wget -O sssh "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/menu-update/ssh.sh" && chmod +x sssh
+wget -O system "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/menu-update/system.sh" && chmod +x system
+wget -O usernew "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/usernew.sh" && chmod +x usernew
+wget -O trial "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/trial.sh" && chmod +x trial
+wget -O hapus "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/hapus/hapus.sh" && chmod +x hapus
+wget -O member "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/member.sh" && chmod +x member
+wget -o webmin "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/webmin.sh" && chmod +x webmin
+wget -O delete "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/hapus/delete.sh" && chmod +x delete
+wget -O cek "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/cek.sh" && chmod +x cek
+wget -O restart "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/restart1.sh" && chmod +x restart
+wget -O speedtest "https://github.com/IlhamStore23/scriptvps/raw/main/speedtest_cli.py" && chmod +x speedtest
+wget -O info "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/info.sh" && chmod +x info
+wget -O ram "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/ram.sh" && chmod +x ram
+wget -O renew "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/renew.sh" && chmod +x renew
+wget -O autokick "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/autokick.sh" && chmod +x autokick
+wget -O ceklim "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/ceklim.sh" && chmod +x ceklim
+wget -O tendang "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/tendang.sh" && chmod +x tendang
+wget -O clear-log "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/clear-log.sh" && chmod +x clear-log
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
