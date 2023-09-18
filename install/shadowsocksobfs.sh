@@ -3,7 +3,7 @@
 
 
 #
-$GitUser="IlhamStore23"
+${GitUser}="IlhamStore23"
 #wget https://github.com/${GitUser}/
 #Install_Packages
 echo "#############################################"
