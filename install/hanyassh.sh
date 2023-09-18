@@ -99,7 +99,7 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/syapik96/aws/main/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/nginx.conf"
 
 Index_port='81'
 IPADDR=$(wget -qO- icanhazip.com);
@@ -161,7 +161,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/${GitUser}/aws/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -228,7 +228,7 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
 #Matikan OpenVPN
-wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/install/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -265,13 +265,13 @@ cd /root/
 apt install -y libxml-parser-perl
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/${GitUser}/aws/main/bannerssh.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 #install bbr dan optimasi kernel
-wget -0 https://raw.githubusercontent.com/${GitUser}/aws/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
-wget -O https://raw.githubusercontent.com/${GitUser}/aws/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget -0 https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget -O https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -292,27 +292,27 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/${GitUser}/aws/main/tambah/add-host.sh"
-wget -O about "https://raw.githubusercontent.com/${GitUser}/aws/main/about.sh"
-wget -O prince "https://raw.githubusercontent.com/${GitUser}/aws/main/prince.sh"
-wget -O menu "https://raw.githubusercontent.com/${GitUser}/aws/main/menu-update/menusshonly.sh"
-wget -O usernew "https://raw.githubusercontent.com/${GitUser}/aws/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/${GitUser}/aws/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/${GitUser}/aws/main/hapus/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/${GitUser}/aws/main/member.sh"
-wget -o webmin "https://raw.githubusercontent.com/${GitUser}/aws/main/webmin.sh"
-wget -O delete "https://raw.githubusercontent.com/${GitUser}/aws/main/hapus/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/${GitUser}/aws/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/${GitUser}/aws/main/restart1.sh"
-wget -O speedtest "https://github.com/${GitUser}/aws/raw/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/${GitUser}/aws/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/${GitUser}/aws/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/${GitUser}/aws/main/renew.sh"
-wget -O autokick "https://raw.githubusercontent.com/${GitUser}/aws/main/autokick.sh"
-wget -O ceklim "https://raw.githubusercontent.com/${GitUser}/aws/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/${GitUser}/aws/main/tendang.sh"
-wget -O clear-log "https://raw.githubusercontent.com/${GitUser}/aws/main/clear-log.sh"
-wget -O system "https://raw.githubusercontent.com/${GitUser}/aws/main/menu-update/system00.sh"
+wget -O add-host "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/tambah/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/about.sh"
+wget -O prince "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/prince.sh"
+wget -O menu "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/menu-update/menusshonly.sh"
+wget -O usernew "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/hapus/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/member.sh"
+wget -o webmin "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/webmin.sh"
+wget -O delete "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/hapus/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/restart1.sh"
+wget -O speedtest "https://github.com/IlhamStore23/scriptvps/raw/main/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/ram.sh"
+wget -O renew "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/renew.sh"
+wget -O autokick "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/autokick.sh"
+wget -O ceklim "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/tendang.sh"
+wget -O clear-log "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/clear-log.sh"
+wget -O system "https://raw.githubusercontent.com/IlhamStore23/scriptvps/main/menu-update/system00.sh"
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
